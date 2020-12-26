@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class NumberPlayList {
+public class LambdaNumberPlayList {
 
 	public static void main(String[] args) {
 
@@ -29,6 +29,7 @@ public class NumberPlayList {
 		class MyConsumer implements Consumer<Integer>{   //Method 2 - Traversing with Consumer Interface - inbuild interface
 			public void accept(Integer t) {
 				System.out.println("Method 2 : Consumer implement Value :"+t);
+		
 			}
 		}
 		MyConsumer action = new MyConsumer();
